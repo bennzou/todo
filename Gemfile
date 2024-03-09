@@ -74,3 +74,6 @@ gem "simple_calendar", "~> 2.0"
 gem 'sassc'
 gem 'pry-rails'
 gem 'rails-ujs'
+group :production do
+  gem 'pg'
+end
