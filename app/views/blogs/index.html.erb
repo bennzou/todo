@@ -5,7 +5,7 @@
 
 <div class="row">
 <div class="col-md-4">
-	<div class="schedule">今後の予定一覧</div>
+	<div class="schedule">入室者</div>
 <table class="table">
   <thead class="thead-light">
     <tr>
@@ -14,6 +14,12 @@
       <p id="notice"><%= notice %></p>
     </tr>
   </thead>
+<div class="side-header">
+  <div class="header-name">
+    <a href="#">Tom</a>
+  </div>
+</div>
+
 
   <tbody>
     <% @blogs.each do |blog| %>
@@ -27,7 +33,7 @@
 
 
 
-<%= form_with(model: @blog, local: true) do |form| %>
+<%= form_with(model: @blog, local: true, html: { class: 'form-with-flex' }) do |form| %>
 
   <div class="title">
     <div class="form-tag">タイトル</div>
@@ -50,7 +56,6 @@
  </div>
 <% end %>
 </div>
-
 <br>
 
 
