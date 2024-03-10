@@ -1,19 +1,125 @@
-.top{
-        width: 80%;
-        background-image: url('header01.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 15vh 10vw;
-        color: #fefbfbe2;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-}
+.top {
+    width: 80%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url('header01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15vh 10vw;
+    color: #fefbfbe2;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
 
 
 .toppage{
     background-color: rgb(172, 185, 174);
 }
+
+.side-header {
+    background-color: #cc5555;
+    padding: 10px;
+    margin-top: 20px;
+    width: 10%;
+    border: 1px solid #ddd; /* ボーダーのスタイルを指定 */
+    border-radius: 5px; /* 角丸にする */
+
+  }
+
+  .header-name a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+  }
+
+  #notice {
+    color: #d9534f; /* Bootstrapの赤色を指定 */
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+
+  body {
+    font-size: 16px;
+  }
+  
+  /* タイトルのスタイル */
+.title {
+    margin-bottom: 15px;
+  }
+  
+  .form-tag {
+    font-weight: bold;
+    color: #333; /* フォントカラーを指定 */
+  }
+  
+  /* 入力フォームのスタイル */
+  form {
+    max-width: 600px; /* フォームの最大幅を指定 */
+    
+  }
+  
+  .title input,
+  .content input,
+  .time select {
+    display: flex;
+    width: 60%;
+    padding: 8px; /* 少し小さく */
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* ボーダーのスタイルを指定 */
+    border-radius: 5px; /* 角丸にする */
+  }
+
+  .time{
+    display: flex;
+    width: 100%;
+  }
+  
+  /* 送信ボタンのスタイル */
+  .submit input {
+    background-color: #4CAF50; /* ボタンの背景色を指定 */
+    color: white; /* ボタンのテキストカラーを指定 */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit input:hover {
+    background-color: #45a049; /* ホバー時の背景色を指定 */
+  }
+  
+  /* テーブルのスタイル */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 12px; /* 少し小さく */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* 入室者のスケジュールのスタイル */
+  .schedule {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .header-name a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* 通知メッセージのスタイル */
+  #notice {
+    color: #d9534f; /* Bootstrapの赤色を指定 */
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+

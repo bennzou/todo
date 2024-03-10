@@ -5,7 +5,7 @@
 
 <div class="row">
 <div class="col-md-4">
-	<div class="schedule">今後の予定一覧</div>
+	<div class="schedule">入室者</div>
 <table class="table">
   <thead class="thead-light">
     <tr>
@@ -14,6 +14,12 @@
       <p id="notice"><%= notice %></p>
     </tr>
   </thead>
+<div class="side-header">
+  <div class="header-name">
+    <%= link_to current_user.name, edit_user_path(current_user) %>
+  </div>
+</div>
+
 
   <tbody>
     <% @blogs.each do |blog| %>
@@ -27,7 +33,7 @@
 
 
 
-<%= form_with(model: @blog, local: true) do |form| %>
+<%= form_with(model: @blog, local: true, html: { class: 'form-with-flex' }) do |form| %>
 
   <div class="title">
     <div class="form-tag">タイトル</div>
@@ -40,8 +46,15 @@
     <%= form.text_field :content %>
   </div>
 
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <input type="file" class="hidden">
+    </label>
+
+
+    <div class="time_name">時間</div>
     <div class="time">
-    <div class="form-tag">時間</div>
+    <div class="form-tag"></div>
     <%= form.datetime_select :start_time %>
   </div>
 
@@ -50,7 +63,6 @@
  </div>
 <% end %>
 </div>
-
 <br>
 
 
