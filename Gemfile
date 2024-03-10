@@ -75,5 +75,7 @@ gem 'sassc'
 gem 'pry-rails'
 gem 'rails-ujs'
 group :production do
-  gem 'pg'
+gem 'pg'
 end
+
+gem 'rails-i18n', '~> 7.0'

@@ -46,8 +46,15 @@
     <%= form.text_field :content %>
   </div>
 
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <input type="file" class="hidden">
+    </label>
+
+
+    <div class="time_name">時間</div>
     <div class="time">
-    <div class="form-tag">時間</div>
+    <div class="form-tag"></div>
     <%= form.datetime_select :start_time %>
   </div>
 
