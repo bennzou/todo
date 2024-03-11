@@ -50,9 +50,13 @@ PASS:7777
 
 # ローカルでの動作方法
 ％　git clone https://github.com/bennzou/todo
+
 ％　cd todo
+
 ％　bundle install
+
 ％　yarn install
+
 
 # 工夫したポイント	
 既存のアプリケーションとの区別化として、アプリケーション等に疎い形でも一目でわかるような簡潔さと、使い勝手の良さをバランスを取りたいという事を目標にしました。
