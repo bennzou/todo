@@ -38,7 +38,7 @@ PASS:7777
 ・写真添付機能
 
 # データベース設計	
-![todo](https://github.com/bennzou/todo/assets/154778086/35fa44b3-bc36-477f-ac3b-87df5281a58b)
+![todo](https://github.com/bennzou/todo/assets/154778086/36ebf124-e67a-4f0c-8bcd-19ec9247216d)
 
 
 # 画面遷移図	
