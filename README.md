@@ -49,7 +49,10 @@ PASS:7777
 使用した言語　　　Ruby/JavaScript
 
 # ローカルでの動作方法
-上記参照ください
+％　git clone https://github.com/bennzou/todo
+％　cd todo
+％　bundle install
+％　yarn install
 
 # 工夫したポイント	
 既存のアプリケーションとの区別化として、アプリケーション等に疎い形でも一目でわかるような簡潔さと、使い勝手の良さをバランスを取りたいという事を目標にしました。
