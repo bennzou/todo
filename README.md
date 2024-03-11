@@ -42,7 +42,8 @@ PASS:7777
 
 
 # 画面遷移図	
-作成次第添付します
+![image](https://github.com/bennzou/todo/assets/154778086/08135d6e-08ec-4d2c-bab8-64684c344ef6)
+
 
 # 開発環境	
 使用した言語　　　Ruby/JavaScript
