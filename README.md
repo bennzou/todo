@@ -20,13 +20,10 @@ PASS:7777
 前職や日々のスケジュールを立てていく上で、自分だけの（又は家族や小チームで）使える、とにかく分かりやすくて使いやすい簡素的なスケジュール表を作りたかった
 
 # 実装した機能についての画像やGIFおよびその説明
-![image](https://github.com/bennzou/todo/assets/154778086/dedecbb9-694d-4df3-8a35-56059f652e10)
+
 スケジュール管理画面
-
-01f93a7603c67cf99245a072806c88d3.mp4
-
-新規登録して上記の管理画面に移行します（動画）
-(https://i.gyazo.com/01f93a7603c67cf99245a072806c88d3.gif)
+![image](https://github.com/bennzou/todo/assets/154778086/dedecbb9-694d-4df3-8a35-56059f652e10)新規登録して上記の管理画面に移行します（動画）
+[![Image from Gyazo](https://i.gyazo.com/01f93a7603c67cf99245a072806c88d3.gif)](https://gyazo.com/01f93a7603c67cf99245a072806c88d3)
 スケジュール登録します（動画）
 
 # 実装予定の機能	
