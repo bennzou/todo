@@ -11,15 +11,15 @@
 | encrypted_password | string | null: false |
 
 ### Association
-- has_many :user_blogs
+- has_one :user_blogs
 - has_many :blogs
 
 ## user_blogs テーブル
 
 | Column    | Type       | Options                        |
 | ------    | ---------- | ------------------------------ |
-| name      | references | null: false, foreign_key: true |
-| content   | references | null: false, foreign_key: true |
+| user      | references | null: false, foreign_key: true |
+| blogs     | references | null: false, foreign_key: true |
 
 ### Association
 
