@@ -22,6 +22,7 @@ PASS:7777
 # 実装した機能についての画像やGIFおよびその説明
 ![image](https://github.com/bennzou/todo/assets/154778086/dedecbb9-694d-4df3-8a35-56059f652e10)
 スケジュール管理画面
+
 01f93a7603c67cf99245a072806c88d3.mp4
 
 新規登録して上記の管理画面に移行します（動画）
