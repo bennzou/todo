@@ -72,15 +72,15 @@ ER図を添付。※作成次第添付します
 | encrypted_password | string | null: false |
 
 ### Association
-- has_many :user_blogs
+- has_one  :user_blogs
 - has_many :blogs
 
 ## user_blogs テーブル
 
 | Column    | Type       | Options                        |
 | ------    | ---------- | ------------------------------ |
-| name      | references | null: false, foreign_key: true |
-| content   | references | null: false, foreign_key: true |
+| user      | references | null: false, foreign_key: true |
+| blog      | references | null: false, foreign_key: true |
 
 ### Association
 
@@ -99,5 +99,5 @@ ER図を添付。※作成次第添付します
 
 ### Association
 - belongs_to :user
-- has_many :user_blog
+- has_many   :user_blog
 
