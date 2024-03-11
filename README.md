@@ -28,6 +28,7 @@ PASS:7777
 ![image](https://github.com/bennzou/todo/assets/154778086/dedecbb9-694d-4df3-8a35-56059f652e10)
 
 ユーザー登録機能
+
 ユーザー新規登録画面から新規登録して、上記の管理画面に移行します
 [![Image from Gyazo](https://i.gyazo.com/fffe1c25a925ee54c1f8cf38e2827df4.gif)](https://gyazo.com/fffe1c25a925ee54c1f8cf38e2827df4)
 
