@@ -60,10 +60,10 @@ ER図を添付。
 
 ## user_blogs テーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| name   | references | null: false, foreign_key: true |
-| blog   | references | null: false, foreign_key: true |
+| Column    | Type       | Options                        |
+| ------    | ---------- | ------------------------------ |
+| name      | references | null: false, foreign_key: true |
+| content   | references | null: false, foreign_key: true |
 
 ### Association
 
@@ -73,11 +73,14 @@ ER図を添付。
 
 ## blogs テーブル
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| user    | references | null: false, foreign_key: true |
-| blog    | references | null: false, foreign_key: true |
+| Column     | Type       | Options                        |
+| -------    | ---------- | ------------------------------ |
+| name       | references | null: false, foreign_key: true |
+| title      | string 　　　　　　　　| null: false 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　|
+| content    | text   　　　　　　　　| null: false 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　|
+| start_time | datetime  　　| null: false 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　   　|
 
 ### Association
 - belongs_to :user
-- has_many :user_blogs
+- has_many :user_blog
+
