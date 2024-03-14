@@ -12,8 +12,6 @@
     color: #fefbfbe2;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   }
-
-
 .toppage{
     background-color: rgb(172, 185, 174);
 }
@@ -40,7 +38,23 @@
     margin-bottom: 20px;
   }
 
+/* （タイトル）ボタンのスタイル */
+.button-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3c3938;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+/* （タイトル）ボタンのホバースタイル */
+.button-link:hover {
+  background-color: #3e927f;
+}
   body {
     font-size: 16px;
   }
