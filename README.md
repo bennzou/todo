@@ -81,7 +81,8 @@ PASS:7777
 | encrypted_password | string | null: false |
 
 ### Association
-- has_one  :user_blogs
+
+- has_one :user_blogs
 - has_many :blogs
 
 ## user_blogs テーブル
@@ -89,7 +90,8 @@ PASS:7777
 | Column    | Type       | Options                        |
 | ------    | ---------- | ------------------------------ |
 | user      | references | null: false, foreign_key: true |
-| blog      | references | null: false, foreign_key: true |
+| blogs     | references | null: false, foreign_key: true |
+
 
 ### Association
 
@@ -102,11 +104,11 @@ PASS:7777
 | Column     | Type       | Options                        |
 | -------    | ---------- | ------------------------------ |
 | name       | references | null: false, foreign_key: true |
-| title      | string 　　　　　　　　| null: false 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　|
-| content    | text   　　　　　　　　| null: false 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　|
-| start_time | datetime  　　| null: false 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　   　|
+| title      | string     | null: false                    |
+| content    | text       | null: false                    |
+| start_time | datetime   | null: false                    |
 
 ### Association
 - belongs_to :user
-- has_many   :user_blog
+- has_many :user_blog
 
