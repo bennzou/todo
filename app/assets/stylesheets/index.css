@@ -1,5 +1,7 @@
 .top {
+    height:auto;
     width: 80%;
+    
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(195, 34, 34, 0.5)), url('NfWl2AQ2Z5t9FBB1710676240.png');
     background-size: cover;
     background-repeat: no-repeat;
