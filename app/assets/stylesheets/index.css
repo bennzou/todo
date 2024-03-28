@@ -1,6 +1,6 @@
 .top {
     width: 80%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(195, 34, 34, 0.5)), url('NfWl2AQ2Z5t9FBB1710676240.png');
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(28, 24, 24, 0.5)), url('#');*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,14 +8,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 15vh 10vw;
-    color: #9db488;     /* 文字色を白に指定 */
+    padding: 10vh 10vw;
+    color: #2b2c2a;     /* 文字色を白に指定 */
     font-size: 50px; /* 適度な文字サイズを指定 */
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; /* 薄い紫色の光を再現 */
+    /*text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #050505, 0 0 70px #060506, 0 0 80px #141014, 0 0 100px #060406, 0 0 150px #0a090a; /* 薄い紫色の光を再現 */
     font-family:Arial Rounded MT; /* 読み込んだり、ダウンロードしたフォントを使う */
   }
 .toppage{
-    background-color: rgb(196, 25, 25);
+    background-color: rgb(239, 232, 232);
 }
 .side-header {
     background-color: #cc5555;
@@ -30,11 +30,11 @@
   .header-name a {
     text-decoration: none;
     font-size: 18px;
-    color: #333;
+    color: #e5dada;
   }
 
   #notice {
-    color: #d9534f; /* Bootstrapの赤色を指定 */
+    color: #e3d8d8; /* Bootstrapの赤色を指定 */
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -83,7 +83,7 @@
     width: 60%;
     padding: 8px; /* 少し小さく */
     margin-bottom: 10px;
-    border: 1px solid #1ab901; /* ボーダーのスタイルを指定 */
+    border: 3px solid #000000; /* ボーダーのスタイルを指定 */
     border-radius: 5px; /* 角丸にする */
   }
 
@@ -138,3 +138,6 @@
     margin-bottom: 20px;
   }
 
+  .table-striped tbody tr:nth-of-type(odd) {
+    /*background-color: rgba(0, 0, 0, 0.05);*/
+  }
