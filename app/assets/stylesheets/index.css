@@ -10,13 +10,11 @@
     justify-content: center;
     padding: 10vh 10vw;
     color: #2b2c2a;     /* 文字色を白に指定 */
-    font-size: 50px; /* 適度な文字サイズを指定 */
+    font-size: 80px; /* 適度な文字サイズを指定 */
     /*text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #050505, 0 0 70px #060506, 0 0 80px #141014, 0 0 100px #060406, 0 0 150px #0a090a; /* 薄い紫色の光を再現 */
     font-family:Arial Rounded MT; /* 読み込んだり、ダウンロードしたフォントを使う */
   }
-.toppage{
-    background-color: rgb(239, 232, 232);
-}
+
 .side-header {
     background-color: #cc5555;
     padding: 10px;
