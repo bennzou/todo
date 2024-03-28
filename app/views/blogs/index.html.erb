@@ -1,6 +1,6 @@
 <div class="toppage">
   
-<h1 class="top">일정 달력 日程日历 カレンダー 2024</h1>
+<h1 class="top">2024</h1>
 <br>
 
 <div class="row">
@@ -12,11 +12,32 @@
     <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
 </div>
+<tr>
+      <th>本日の予定</th>     
+<%= calendar number_of_days: 1 do |date| %>
+  <% if date == Date.today %>
+    <span class="today"><%= date %></span>
+    <% @today_blogs = @blogs.select { |blog| blog.start_time.to_date == date } %>
+    <% if @today_blogs.any? %>
+      <ul>
+        <% @today_blogs.each do |blog| %>
+          <li><%= link_to blog.title, blog %></li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>今日の予定はありません。</p>
+    <% end %>
+  <% else %>
+    <%= date %>
+  <% end %>
+<% end %>
+ </tr>
+
 <table class="table">
   <thead class="thead-light">
     <tr>
       <th>タイトル</th>
-      <th>日程</th>
+      <th>日時</th>
       
      
     </tr>
