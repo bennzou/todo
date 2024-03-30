@@ -1,5 +1,13 @@
 <div class="toppage"> 
-<h1 class="top"> #April  2024</h1>
+<h1 class="top"></h1>
+<div id="d2">&nbsp;</div>
+<script>
+setInterval(function() {
+  document.getElementById("d2").innerHTML = new Date().toLocaleString();
+  /*(new Date().toLocaleString('ja-JP-u-ca-japanese'));*/
+  //和暦で表示します
+}, 1000);
+</script>
 <br>
 
 <div class="row">
@@ -12,6 +20,7 @@
   </div>
 </div>
 <tr>
+
       <th>本日の予定</th>     
 <%= calendar number_of_days: 1 do |date| %>
   <% if date == Date.today %>
