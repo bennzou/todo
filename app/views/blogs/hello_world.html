@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+    <title>Hello!</title>
+    <style>
+     body {font-size: 16pt; font-weight: bold;}
+     h1  { color:white;padding: 5px; font-size: 24pt;background-color:red;}
+     .gu { color:red ;}
+     .ki { color:blue;}
+    </style>
+</head>
+<body>
+<h1>Hello!</h1>
+<script>
+    var x =12345;
+    document.write(x);
+    document.write("<br>");//indexでの改行
+    x = "Hello!";
+    document.write(x);
+
+    var x = 123;
+    var y = 456;
+    var z = x + y;
+    document.write("<br>")
+    document.write(z);
+    document.write("<br>")
+    document.write(x + " + " + y +" = " + z );
+    document.write("<br>")
+
+    var x = 12345;
+    if( x % 2 == 0)
+    { document.write(x + 'は、<span class="gu">偶数</span>です。'); }
+    else
+    { document.write(x + 'は、<span class="ki">奇数</span>です。'); }
+    //switch構文
+    
+
+    
+</script>
+</body>
+</html>
