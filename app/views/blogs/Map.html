@@ -20,6 +20,7 @@ document.getElementById("t1").innerHTML = "Hello world!!";//ブラウザに表�
 </script>
 <!--------------------------------------------------------------------------------------------------------------------------------------------->
 
+<h1>document.getElementById("d1").innerHTML = new Date().toLocaleString();//時刻を表示</h1>
 <div id="d1"></div>
 <script>
 document.getElementById("d1").innerHTML = new Date().toLocaleString();//時刻を表示
@@ -46,6 +47,8 @@ function ohayou() {
 
 <title>JavaScript Sample</title>
 <script src="test.js"></script>
+
+<h1> イベントハンドラ </h1>
 <body>
     :
  <input type="button" value="OK" onclick="ohayou()">
@@ -149,8 +152,9 @@ strictモードのコードは高速に実行することができる場合が�
 
 
 <!-- 構文 -->
-<script>
 
+
+<script>
 // 複文(ブロック)
 // {
 //   xx = 3;
@@ -158,16 +162,74 @@ strictモードのコードは高速に実行することができる場合が�
 //   zz = xx + yy;
 // }
 
-
 // 変数・定数宣言
 var xx = 5;
 var yy = 8;
 var zz = xx + yy;
 
 console.log(zz);
+</script>
+
+
+
+<script>
+  n = 100;
+if (n < 10) {
+  alert("Small!");      // 10より小さければ Small! を
+} else if (n > 20) {
+  alert("Big!");        // 20より大きければ Big! を
+} else {
+  alert("Normal");      // さもなくば Normal を表示
+}
+</script>
+
+
+
+<h1>条件分岐(switch）</h1><br>
+n の値が 1 なら One を、2 なら Tow を、3 か 4 なら Three or Four を、それ以外なら Other を表示 
+<script>
+n = 4;
+switch(n){
+case 1:
+  alert("One");
+  break;
+case 2:
+  alert("Two");
+  break;
+case 3:
+case 4:
+ alert("Three or Four");
+ break;
+ default:
+  alert("Other");
+}
+</script>
+<h1>繰り返し（while）</h1><br>
+n が 10 未満の間処理を繰り返し、0123456789 と表示<br>
+<script>
+n = 0;
+while (n < 10) {
+  console.log(n);
+  n++;
+}
+</script>
+
+<h1>繰り返し（do）</h1><br>
+expression が真である間、statements を繰り返します。次の例では 0123456789 と表示されます。最初から<br>
+expression が偽であっても、statements が少なくとも1回は実行される点が while (...) {...} と異なります。<br>
+<script>
+
 
 </script>
 
+<style>
+h1 {
+  color: red;
+  font-size: 16px;
+}
+
+
+</style>
 
 
 </head>
