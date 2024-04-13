@@ -1,45 +1,38 @@
-.toppage{
+.header{
+
+}
+
+.toppage {
   background-color: rgb(249, 249, 248);
 }
 
+/* ホーム画面の年月日 */
 #d2 {
-    width: 80%;
-    /*background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(28, 24, 24, 0.5)), url('#');*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 10vh 10vw;
-    color: #b8bdb3;     /* 文字色を白に指定 */
-    font-size: 80px; /* 適度な文字サイズを指定 */
-    /*text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #050505, 0 0 70px #060506, 0 0 80px #141014, 0 0 100px #060406, 0 0 150px #0a090a; /* 薄い紫色の光を再現 */
-    font-family:Arial Rounded MT; /* 読み込んだり、ダウンロードしたフォントを使う */
-  }
+  width: 80%;
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(28, 24, 24, 0.5)), url('#');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10vh 10vw;
+  color: #b8bdb3; /* 文字色を白に指定 */
+  font-size: 80px; /* 適度な文字サイズを指定 */
+  /*text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #050505, 0 0 70px #060506, 0 0 80px #141014, 0 0 100px #060406, 0 0 150px #0a090a; /* 薄い紫色の光を再現 */
+  font-family: Arial Rounded MT; /* 読み込んだり、ダウンロードしたフォントを使う */
+}
 
-.side-header {
-    background-color: #ce9595;
-    padding: 10px;
-    margin-top: 20px;
-    width: 10%;
-    border: 1px solid #ddd; /* ボーダーのスタイルを指定 */
-    border-radius: 5px; /* 角丸にする */
-
-  }
-
-  .header-name a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #e5dada;
-  }
-
-  #notice {
-    color: #e3d8d8; /* Bootstrapの赤色を指定 */
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+/* 入室者の名前 */
+.login-name {
+  background-color: #ce9595;
+  padding: 20px;
+  margin-top: 20px;
+  width: 10%;
+  border: 1px solid #ddd; /* ボーダーのスタイルを指定 */
+  border-radius: 5px; /* 角丸にする */
+}
 
 /* （タイトル）ボタンのスタイル */
 .button-link {
@@ -58,88 +51,88 @@
 .button-link:hover {
   background-color: #3e927f;
 }
-  body {
-    font-size: 16px;
-  }
-  
-  /* タイトルのスタイル */
-.title {
-    margin-bottom: 15px;
-  }
-  
-  .form-tag {
-    font-weight: bold;
-    color: #333; /* フォントカラーを指定 */
-  }
-  
-  /* 入力フォームのスタイル */
-  form {
-    max-width: 600px; /* フォームの最大幅を指定 */
-    
-  }
-  
-  .title input,
-  .content input,
-  .time select {
-    display: flex;
-    width: 60%;
-    padding: 8px; /* 少し小さく */
-    margin-bottom: 10px;
-    border: 1px solid #b8bdb3; /* ボーダーのスタイルを指定 */
-    border-radius: 5px; /* 角丸にする */
-  }
+body {
+  font-size: 20px;
+}
 
-  .time{
-    display: flex;
-    width: 100%;
-  }
-  
-  /* 送信ボタンのスタイル */
-  .submit input {
-    background-color: #4CAF50; /* ボタンの背景色を指定 */
-    color: white; /* ボタンのテキストカラーを指定 */
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .submit input:hover {
-    background-color: #45a049; /* ホバー時の背景色を指定 */
-  }
-  
-  /* テーブルのスタイル */
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 12px; /* 少し小さく */
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* 入室者のスケジュールのスタイル */
-  .schedule {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .header-name a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  /* 通知メッセージのスタイル */
-  #notice {
-    color: #d9534f; /* Bootstrapの赤色を指定 */
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+/* 入力フォーム(タイトル)(内容)のスタイル */
+form {
+  max-width: 60%; /* フォームの最大幅を指定 */
+}
 
-  .table-striped tbody tr:nth-of-type(odd) {
-    /*background-color: rgba(0, 0, 0, 0.05);*/
-  }
+.title input,
+.content input {
+  display: flex;
+  width: 60%;
+  padding: 8px; /* 少し小さく */
+  margin-bottom: 10px;
+  border: 1px solid #b8bdb3; ボーダーのスタイルを指定
+  border-radius: 5px; /* 角丸にする */
+}
+
+.time select {
+  width: 12%;
+  padding: 8px; /* 少し小さく */
+  border: 1px solid #b8bdb3; ボーダーのスタイルを指定
+  border-radius: 5px; /* 角丸にする */
+}
+
+/* 送信ボタンのスタイル */
+.submit input {
+  background-color: #9f7d59; /* ボタンの背景色を指定 */
+  color: white; /* ボタンのテキストカラーを指定 */
+  padding: 10px;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit input:hover {
+  background-color: #a77e9b; /* ホバー時の背景色を指定 */
+}
+
+/* テーブルのスタイル */
+.table {
+  width: 30%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 12px; /* 少し小さく */
+  text-align: left;
+  font-size: 20px;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+/* 入室者のスケジュールのスタイル */
+.schedule {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-name a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #333;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  /*background-color: rgba(0, 0, 0, 0.05);*/
+}
+
+.today-spase {
+  padding: 10px;
+  margin-top: 20px;
+  width: 50%;
+  /* border: 1px solid #ddd; ボーダーのスタイルを指定 */ 
+  border-radius: 5px; /* 角丸にする */
+}
+
+
+#notice {
+  color: red; /* テキストの色を青色に設定 */
+  font-size: 30px; /* フォントサイズを16ピクセルに設定 */
+}
