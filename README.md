@@ -28,11 +28,10 @@ PASS:7777
 [![Image from Gyazo](https://i.gyazo.com/337fa3e51160365359ce0a01c7e888be.gif)](https://gyazo.com/337fa3e51160365359ce0a01c7e888be)
 
 ・ユーザー登録機能：ユーザー新規登録画面から新規登録して、上記の管理画面に移行します
-
+[![Image from Gyazo](https://i.gyazo.com/ae300f5bcd5c7dc9abcb915c721be5bd.gif)](https://gyazo.com/ae300f5bcd5c7dc9abcb915c721be5bd)
 
 ・予定登録機能：管理画面より、予定のタイトル、内容、日時を入力してカレンダー欄に入力します
-
-
+[![Image from Gyazo](https://i.gyazo.com/c5983a9aff43a6e2e853a68aca323989.gif)](https://gyazo.com/c5983a9aff43a6e2e853a68aca323989)
 # 実装予定の機能	
 
 ・写真添付機能
