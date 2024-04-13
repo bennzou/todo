@@ -14,15 +14,15 @@ setInterval(function() {
 <div class="col-md-4">
 	<div class="schedule">入室者</div>
    <p id="notice"><%= notice %></p>
-   <div class="side-header">
+   <div class="login-name">
   <div class="header-name">
     <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
 </div>
-<tr>
 
-      <th>本日の予定</th>     
-<%= calendar number_of_days: 1 do |date| %>
+<div class = "today-spase">    
+<th>本日の予定</th>   
+<%= calendar number_of_days: 2 do |date| %>
   <% if date == Date.today %>
     <span class="today"><%= date %></span>
     <% @today_blogs = @blogs.select { |blog| blog.start_time.to_date == date } %>
@@ -35,19 +35,29 @@ setInterval(function() {
     <% else %>
       <p>今日の予定はありません。</p>
     <% end %>
+  <% elsif date == Date.tomorrow %>
+    <span class="tomorrow"><%= date %></span>
+    <% @tomorrow_blogs = @blogs.select { |blog| blog.start_time.to_date == date } %>
+    <% if @tomorrow_blogs.any? %>
+      <ul>
+        <% @tomorrow_blogs.each do |blog| %>
+          <li><%= link_to blog.title, blog %></li>
+        <% end %>
+      </ul>
+    <% else %>
+      <p>明日の予定はありません。</p>
+    <% end %>
   <% else %>
     <%= date %>
   <% end %>
 <% end %>
- </tr>
+</div>
 
 <table class="table">
   <thead class="thead-light">
     <tr>
       <th>タイトル</th>
       <th>日時</th>
-      
-     
     </tr>
   </thead>
 
@@ -55,13 +65,11 @@ setInterval(function() {
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= link_to blog.title, blog, class: 'button-link' %></td>
-        <td><%= blog.start_time.strftime("%m-%d") %></td>
+        <td><%= blog.start_time.strftime("%m-%d %H:%M") %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-
 
 <%= form_with(model: @blog, local: true, html: { class: 'form-with-flex' }) do |form| %>
 
@@ -70,42 +78,41 @@ setInterval(function() {
     <%= form.text_field :title %>
   </div>
 
-
+<br>
   <div class="content">
     <div class="form-tag">内容</div>
     <%= form.text_field :content %>
   </div>
-
+<br>
     <label class="form-image">
       <span class="image-file">画像</span>
       <input type="file" class="hidden">
     </label>
 
-
+<br>
     <div class="time_name">時間</div>
     <div class="time">
     <div class="form-tag"></div>
     <%= form.datetime_select :start_time %>
   </div>
-
+<br>
  <div class="submit">
     <%= form.submit %>
  </div>
 <% end %>
 </div>
-<br>
-
 
 <br>
 <div class="col-md-8">
-<%= month_calendar events: @blogs do |date, blogs| %>
-  <%= date.day %>
+   <%= month_calendar events: @blogs do |date, blogs| %>
+   <%= date.day%>
 
-  <% blogs.each do |blog| %>
+     
+   <% blogs.each do |blog| %>
     <div>
       <%= link_to blog.title, blog %>
     </div>
-  <% end %>
+   <% end %>
 <% end %>
 </div>
 </div>
