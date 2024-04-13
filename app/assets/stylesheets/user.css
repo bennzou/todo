@@ -6,7 +6,8 @@
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
+.account-page .account-page__inner .account-page__inner--left,
+.account-page .account-page__inner .account-page__inner--right {
   float: left;
   width: 50%;
 }
@@ -66,9 +67,9 @@
   border: none;
   border-radius: 2px;
 }
-.account-page input[type=submit] {
+.account-page input[type="submit"] {
   float: left;
-  margin-top: 20px;
+  margin-top: 40px;
   color: #fff;
   background-color: #38aef0;
 }
