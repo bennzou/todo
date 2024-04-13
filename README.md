@@ -25,7 +25,7 @@ PASS:7777
 # 実装した機能についての画像やGIFおよびその説明
 
 カレンダー管理画面
-![image](https://github.com/bennzou/todo/assets/154778086/dedecbb9-694d-4df3-8a35-56059f652e10)
+(https://gyazo.com/8d1dde07d587103389263043cb0150db)
 
 ・ユーザー登録機能：ユーザー新規登録画面から新規登録して、上記の管理画面に移行します
 [![Image from Gyazo](https://i.gyazo.com/fffe1c25a925ee54c1f8cf38e2827df4.gif)](https://gyazo.com/fffe1c25a925ee54c1f8cf38e2827df4)
