@@ -1,7 +1,5 @@
 .header{
-
 }
-
 .toppage {
   background-color: rgb(249, 249, 248);
 }
@@ -98,6 +96,16 @@ form {
   border-collapse: collapse;
   margin-bottom: 20px;
 }
+
+.table {
+  overflow: scroll;
+  border: rgb(160, 160, 172) 2px solid;  
+}
+
+
+
+
+
 
 th,
 td {
