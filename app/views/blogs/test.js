@@ -1,3 +1,3 @@
 function ohayou() {
-    alert("Hello!");
-  }
+  alert("Hello!");
+}

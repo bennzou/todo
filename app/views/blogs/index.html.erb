@@ -20,8 +20,7 @@ setInterval(function() {
   </div>
 </div>
 
-<div class = "today-spase">    
-<th>本日の予定</th>   
+<div class = "today-spase">      
 <%= calendar number_of_days: 2 do |date| %>
   <% if date == Date.today %>
     <span class="today"><%= date %></span>
@@ -61,7 +60,7 @@ setInterval(function() {
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="tbody">
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= link_to blog.title, blog, class: 'button-link' %></td>
