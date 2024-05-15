@@ -60,11 +60,11 @@ form {
 
 .title input,
 .content input {
-  display: flex;
+  /* margin-top: 60px;
   width: 60%;
   padding: 8px; /* 少し小さく */
-  margin-bottom: 10px;
-  border: 1px solid #b8bdb3; ボーダーのスタイルを指定
+  /* margin-bottom: 10px;
+  border: 1px solid #b8bdb3; ボーダーのスタイルを指定 */ */
   border-radius: 5px; /* 角丸にする */
 }
 
@@ -103,10 +103,6 @@ form {
 }
 
 
-
-
-
-
 th,
 td {
   padding: 12px; /* 少し小さく */
@@ -143,4 +139,15 @@ td {
 #notice {
   color: red; /* テキストの色を青色に設定 */
   font-size: 30px; /* フォントサイズを16ピクセルに設定 */
+}
+
+.form-with-flex {
+
+  align-items:flex-end;
+  flex-direction: column; /* フォームの要素を縦に並べる */
+}
+.show{
+  padding: 20px;
+  margin-top: 20px;
+  width: 50%;
 }
